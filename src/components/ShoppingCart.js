@@ -31,7 +31,7 @@ const ShoppingCart = () => {
         <button onClick={openModal}>Abrir Carrito de compras</button>
       </section>
       <Modal isOpen={isOpenModal} closeModal={closeModal}>
-        {cart.length === 0 && <CartEmpty />}
+        {cart.length === 0 && <CartEmpty closeModal={closeModal} />}
         {cart.length !== 0 && (
           <>
             <section>
@@ -77,7 +77,10 @@ const ShoppingCart = () => {
                   }, 0)}
                 </span>
               </h5>
-              <button className="w-32 p-1 mt-4 font-bold text-center border-2 border-yellow-500 rounded">
+              <button
+                className="w-32 p-1 mt-4 font-bold text-center border-2 border-yellow-500 rounded"
+                onClick={closeModal}
+              >
                 Comprar
               </button>
             </section>
