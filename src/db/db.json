@@ -99,5 +99,14 @@
       "content": 1
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 1,
+      "image": "https://jumboargentina.vtexassets.com/arquivos/ids/687345/Whisky-Ballantines-7yo-Bourbon-Finish-700ml-1-884196.jpg?v=637795965705500000",
+      "name": "whisky Ballentines",
+      "price": "5300",
+      "content": 1,
+      "quantity": 2
+    }
+  ]
 }

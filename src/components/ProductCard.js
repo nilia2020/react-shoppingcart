@@ -1,4 +1,4 @@
-const Product = ({ data, addToCart }) => {
+const ProductCard = ({ data, addToCart }) => {
   const { name, price, image, content } = data;
   return (
     <div className="rounded-xl p-4 flex flex-col items-center bg-slate-200">
@@ -17,4 +17,4 @@ const Product = ({ data, addToCart }) => {
   );
 };
 
-export default Product;
+export default ProductCard;
