@@ -8,8 +8,8 @@ export const ShoppingContext = createContext();
 
 const ShoppingProvider = (props) => {
   const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
-  const productsURL = "http://localhost:5000/products",
-    cartURL = "http://localhost:5000/cart";
+  const productsURL = "http://localhost:7000/products",
+    cartURL = "http://localhost:7000/cart";
   const { products, cart } = state;
   const [loading, setLoading] = useState(false);
   const updateState = async () => {
